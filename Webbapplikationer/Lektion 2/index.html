@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Lektion 2</title>
+
+    <!-- Länk till css filen styles.css som sedan slår igenom på de bestämda taggarna (h2) (p) -->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" /> 
+
+    <!--
+    <base href="http://github.com" target="_blank" />
+    -->
+</head>
+
+<body>
+    <section>
+    <header>
+        <p>
+        <h2 style="text-align: right; color:blueviolet; font-size: 20px">Span</h2>
+        
+        <!-- Följer <div> taggen istället för h2 taggens färg från .css filen -->
+        <h2><div>SOS21</div></h2>
+        
+        </p>
+    </header>
+
+    <h2 class="mainHeader">test</h2>
+    </section>
+
+    <a href="about.html">About me</a>
+
+    <section>
+    <!-- Använder id "title" från .css filen -->
+    <h2 id="title">Descriptive list</h2>
+    <dl>
+        <dt>Namn</dt>
+        <dd>Beskrivning</dd>
+        <dt>Namn 2</dt>
+        <dd>Beskrivning 1</dd>
+        <dd>Beskrivning 2</dd>
+    </dl>
+    </section>
+
+    <main>
+    <hr />
+    <a href="mickelainen">Github</a>
+    <br />
+    <br />
+    <!-- Overridar base with href and target -->
+    <a href="http://github.com" target="_self">GithubOverrideBaseTarget</a>
+    <hr />
+    <h2 class="mainHeader">Form Demo</h2>
+    <form>
+        <label for="firstName">First name:</label><br />
+        <input type="text" name="firstName" /><br />
+        <label for="lastName">Last name:</label><br />
+        <input type="text" name="lastName" /><br />
+        <label for="emailAddress">Email address:</label><br />
+        <input type="email" name="emailAddress" /> <br />
+        <label for="password">Password:</label><br />
+        <input type="password" name="password" /> <br />
+
+        <p>Checkboxes : </p>
+        <input type="checkbox" name="checkbox1" /> Checkbox1 <br />
+        <input type="checkbox" name="checkbox2" /> Checkbox2 
+
+        <p>Radio buttons : </p>
+        <input type="radio" name="radio" /> Radio1 <br />
+        <input type="radio" name="radio" /> Radio2 <br />
+
+        <p>Color picker :</p>
+        <input type="color" name="color" /> Color picker <br />
+
+        <p>Datetime : </p>
+        <input type="datetime-local" name="datetime" /> DateTime <br />
+        <br />
+
+        <p>Reset & Submit</p>
+        <input type="reset" value="Reset" />
+        <input type="submit" value="Submit" />
+
+        <p>Dropdown : </p>
+        <label for="cars">Select your car:</label>
+        <select name="cars">
+            <optgroup label="Svenska bilar">
+            <option value="Volvo">Volvo</option>
+            <option value="Saab">Saab</option>
+            </optgroup>
+            <optgroup label ="Övrigt">
+            <option value="Ford">Ford</option>
+            </optgroup>
+        </select>
+    </form>
+    </main>
+</body>
+
+</html>
