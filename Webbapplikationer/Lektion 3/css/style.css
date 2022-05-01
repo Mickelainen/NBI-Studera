@@ -1,0 +1,77 @@
+:root {
+    --clr-primary: red;
+}
+
+h1 {
+    color:rgb(42, 165, 104);
+}
+
+.title{
+    color: black;
+    border: 2px solid black;
+}
+
+.colorChange {
+    color: yellow;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    font-style: italic;
+   
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+    font-weight: bold;
+    opacity: 0.5;
+    transition: all 1s ease-out;
+    
+}
+
+body{
+    color: purple;
+    /* background-image: url('../img/nedladdning.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom right; */
+
+    /* shorthand sätt o skriva på */
+    background: url('../img/nedladdning.jpg') no-repeat bottom right
+}
+
+.columnbox {
+    float: left;
+    width : 33.3%;
+    box-sizing: border-box;
+}
+
+/* li:first-child {
+    color: yellow;
+} */
+
+li:nth-child(2){
+    color:red;
+}
+
+div > p {
+    color: red;
+}
+
+@media screen and (max-width: 600px){
+    .title {
+        color: red;
+    }
+    .columnbox {
+        background-color: black;
+    }
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
