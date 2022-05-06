@@ -1,0 +1,23 @@
+body {
+    display:flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+header {
+    display:flex;
+    background-color: grey;
+}
+
+.newColor {
+    color: blue;
+}
+
+#innerHTML {
+    color: red;
+}
+
+.btn{
+    color: pink;
+    background-color: blueviolet;
